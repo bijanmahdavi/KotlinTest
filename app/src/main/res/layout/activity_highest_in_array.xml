@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/array_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[some array]"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/highest_in_array_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highest number in array: "
+        android:textSize="20sp"
+        android:layout_below="@id/array_view"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/buttonFor_biggestIntInArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/highest_in_array_view"
+        android:layout_centerHorizontal="true"
+        android:text="Largest in Array" />
+
+
+</RelativeLayout>

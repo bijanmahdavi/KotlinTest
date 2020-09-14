@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Savings Account"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/array_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Savings Balance: "
+        android:textSize="50sp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/current_savings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:layout_below="@id/array_view"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/savings_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/current_savings"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/savings_amount"
+        android:layout_centerHorizontal="true">
+    <Button
+        android:id="@+id/saving_withdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Withdraw" />
+    <Button
+        android:id="@+id/saving_deposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deposit" />
+    </LinearLayout>
+
+</RelativeLayout>

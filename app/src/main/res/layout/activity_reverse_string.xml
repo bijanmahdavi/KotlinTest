@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/string_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="some String"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/reversed_string_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reversed String:"
+        android:textSize="20sp"
+        android:layout_below="@id/string_view"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/buttonFor_stringReverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reversed_string_view"
+        android:layout_centerHorizontal="true"
+        android:text="Reverse" />
+
+
+</RelativeLayout>
